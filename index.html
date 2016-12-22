@@ -9,8 +9,8 @@
     <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
     <meta name="Resource-type" content="Document" />
 
-
-    <link rel="stylesheet" type="text/css" href="/jquery.fullPage.css" />
+     <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="examples.css" />
 
     <!--[if IE]>
@@ -19,11 +19,10 @@
         </script>
     <![endif]-->
 
-    <script type="text/javascript" src="/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
 
-    <script type="text/javascript" src="/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="examples.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -38,73 +37,82 @@
 <body>
 
 <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+
+
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">项目经验</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">个人简介</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">个人经历</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">联系我</a></li>
 </ul>
 
-<select id="demosMenu">
-  <option selected>Choose Demo</option>
-  <option id="activeSlide">Active section and slide</option>
-  <option id="apple">Apple iPhone demo (animations)</option>
-  <option id="autoHeight">Auto height</option>
-  <option id="autoplayVideoAndAudio">Autoplay Video and Audio</option>
-  <option id="backgrounds">Background images</option>
-  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
-  <option id="backgroundVideo">Background video</option>
-  <option id="callbacks">Callbacks</option>
-  <option id="continuousHorizontal">Continuous horizontal</option>
-  <option id="continuousVertical">Continuous vertical</option>
-  <option id="css3">CSS3</option>
-  <option id="dragAndMove">Drag And Move</option>
-  <option id="easing">Easing</option>
-  <option id="fadingEffect">Fading Effect</option>
-  <option id="fixedHeaders">Fixed headers</option>
-  <option id="gradientBackgrounds">Gradient backgrounds</option>
-  <option id="interlockedSlides">Interlocked Slides</option>
-  <option id="looping">Looping</option>
-  <option id="methods">Methods</option>
-  <option id="navigationV">Vertical navigation dots</option>
-  <option id="navigationH">Horizontal navigation dots</option>
-  <option id="noAnchor">No anchor links</option>
-  <option id="normalScroll">Normal scrolling</option>
-  <option id="normalScrollElements">Normal scroll elements</option>
-  <option id="offsetSections">Offset sections</option>
-  <option id="oneSection">One single section</option>
-  <option id="resetSliders">Reset sliders</option>
-  <option id="responsiveAutoHeight">Responsive Auto Height</option>
-  <option id="responsiveHeight">Responsive Height</option>
-  <option id="responsiveWidth">Responsive Width</option>
-  <option id="responsiveSlides">Responsive Slides</option>
-  <option id="scrollBar">Scroll bar enabled</option>
-  <option id="scrollHorizontally">Scroll horizontally</option>
-  <option id="scrollOverflow">Scroll inside sections and slides</option>
-  <option id="scrollOverflowReset">ScrollOverflow Reset</option>
-  <option id="scrollingSpeed">Scrolling speed</option>
-</select>
+
 
 <div id="fullpage">
     <div class="section " id="section0">
-        <h1>fullPage.js</h1>
-        <p>Continuous Scrolling Enabled</p>
-        <img src="imgs/fullPage.png" alt="fullPage" />
-    </div>
-    <div class="section active" id="section1">
+
         <div class="slide" id="slide1">
             <div class="intro">
-                <h1>Around the world scrolling</h1>
-                <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
+                <img src="imgs/ptlogo.jpg" alt="ptlogo">
+                <h2><a href="https://www.baidu.com/link?url=6HhjuBsWeLjZLZ1_ewrn40rnB3gfK_rCfwBsCU-XivW&wd=&eqid=83916c2c0000652c00000005585b86e8">北京普天新能源管理平台</a></h2>
+                <p>普天新能源管理平台网厅：网厅部分前端框架使用jquery和bootstrap，项目用require.js来完成打包工作，因为分为两种客户，采用freemark来减少代码的重复度。
+                    地图的实现借助了第三方API（图吧）</p>
             </div>
         </div>
-        <div class="slide active" id="slide2">
-            <h1>Slide 2</h1>
+        <div class="slide" id="slide2">
+            <img src="imgs/dianxin.png" alt="dianxinlogo">
+            <h2>河北石家庄电信爱营销</h2>
+                <p>电信的维护项目:对样式进行更新，增加些业务功能页面，并让其兼容火狐和ie7浏览器</p>
         </div>
         <div class="slide" id="slide3">
             <h1>Slide 3</h1>
         </div>
+    </div>
+    <div class="section active" id="section1">
+        <img src="imgs/resumePhoto.jpg" alt="resumePhoto" />
+        <div id="intro-text">
+            <ul class="fl">
+                <li><span>姓名</span> | 陆鸿博</li>
+                <li><span>手机</span> | 18651612809</li>
+                <li><span>学历</span> | 本科</li>
+                <li><span>专业</span> | 计算机科学与技术</li>
+                <li><span>邮箱</span> | <a hidefocus="true" href="mailto:luhongbo9786@gmail.com">luhongbo9786@gmail.com</a>
+                <li><span>所在地</span> | 江苏 - 南京 - 浦口</li>
+                <li><span>Blog</span> | <a hidefocus="true" href="http://www.cnblogs.com/luhongbo/">点击进入</a></li>
+
+            </ul>
+            <div class="fr">
+                <p>我是一个做事认真,对生活有激情的人。<br>我喜欢研究所碰到的各种技术，不给自己设边界，有 Geek 精神。<br>我有时间概念，能在约定时间内保证完成任务。</p>
+                <p>半年前端开发经验，熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用 jQuery 框架，曾经开发过 jQuery 插件。<br>
+                    有良好的编码习惯。
+                    有 Java 基础，对后端框架的开发流程有一定了解，能够配合后端程序员完成相关工作。<br>
+                    熟悉并且在努力学习AngularJS；理解基本的算法分析与数据结构，以及面向对象的设计模式。
+                </p>
+            </div>
+        </div>
 
     </div>
     <div class="section" id="section2">
+        <div class="workEXP-main">
+            <ul class="timebox">
+                <li class="time0">2012.09 - 2016.07</li>
+                <li class="time1">2016.07 - Now</li>
+            </ul>
+            <div class="timeline"></div>
+            <ul class="workbox">
+                <li class="work-intro0">
+                    <label class="work-place">广东轻工职业技术学院</label>
+                    <label class="work-position">楼宇智能化工程技术 专业</label>
+                    <label class="work-do"></label>
+                </li>
+                <li class="work-intro1">
+                    <label class="work-place">工学咨询工作室</label>
+                    <label class="work-position">前端工程师 兼 PM</label>
+                    <label class="work-do">负责网站交互设计、网站前端界面实现；与甲方交涉、与甲方讨论及分析需求、流程、可行性评估等。</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section3">
         <div class="intro">
             <h1>Scroll Down</h1>
             <p>And it will animate down to the first section</p>
