@@ -25,11 +25,20 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+            $("#menu li:eq(2)").bind("click",function () {
+                $("#exp1").animate({opacity:"1"},2000);
+
+                $("#exp1").next().animate({opacity:"1"},4000);
+                $("#exp1").next().next().animate({opacity:"1"},6000);
+            });
             $('#fullpage').fullpage({
               sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
               anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
               menu: '#menu',
             });
+
+
+
         });
     </script>
 
@@ -92,25 +101,20 @@
 
     </div>
     <div class="section" id="section2">
-        <div class="workEXP-main">
-            <ul class="timebox">
-                <li class="time0">2012.09 - 2016.07</li>
-                <li class="time1">2016.07 - Now</li>
-            </ul>
-            <div class="timeline"></div>
-            <ul class="workbox">
-                <li class="work-intro0">
-                    <label class="work-place">广东轻工职业技术学院</label>
-                    <label class="work-position">楼宇智能化工程技术 专业</label>
-                    <label class="work-do"></label>
-                </li>
-                <li class="work-intro1">
-                    <label class="work-place">工学咨询工作室</label>
-                    <label class="work-position">前端工程师 兼 PM</label>
-                    <label class="work-do">负责网站交互设计、网站前端界面实现；与甲方交涉、与甲方讨论及分析需求、流程、可行性评估等。</label>
-                </li>
-            </ul>
-        </div>
+         <ul >
+             <li id="exp1">
+                 <h1>山东科技大学</h1>
+                 <h2>2012.9 - 2016.7</h2>
+             </li>
+             <li>
+                 <h1>东软集团（大连）有限公司</h1>
+                 <h2>2016.7 - 2016.12</h2>
+             </li>
+             <li>
+                 <h1>？</h1>
+                 <h2>? - ?</h2>
+             </li>
+         </ul>
     </div>
     <div class="section" id="section3">
         <div class="intro">
@@ -121,4 +125,9 @@
 </div>
 
 </body>
+<script>
+
+
+
+</script>
 </html>

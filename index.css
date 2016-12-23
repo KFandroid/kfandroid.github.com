@@ -51,3 +51,7 @@
     color: gold;
     text-decoration: underline;
 }
+#section2 ul li{
+    opacity: 0;
+
+}
