@@ -55,3 +55,13 @@
     opacity: 0;
 
 }
+#section3{
+    background-color: #5bc0de;
+}
+#section3 h1{
+    color: gold;
+    text-decoration: underline;
+}
+#section3 a:hover{
+    color: gold;
+}
