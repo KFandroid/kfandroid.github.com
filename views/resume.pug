@@ -1,0 +1,74 @@
+//
+   Created by hasee on 2017/4/9.
+- var name = ' 陆鸿博';
+- var position = ' 前端工程师';
+- var workYears = ' 一年以上'
+
+html
+    head
+        meta(charset="UTF-8")
+        title My Resume
+        link( rel='stylesheet',href='../public/stylesheets/YUIReset.css')
+        link( rel='stylesheet', href='../public/stylesheets/resume.css')
+
+    body
+    .header
+        .container
+            span(class='header-title') RESUME
+            ul(class='menu')
+                li
+                    a(class='header-link' href='') Contact
+                li
+                    a(class='header-link' href='') Blog
+
+    .container
+        #sidebar
+            h2(class="about-title") About
+            #about
+                img(class='my-photo',src='../public/images/myPhoto.jpg')
+                p(class='name')
+                    span 姓名:
+                    span #{name}
+                p(class='position')
+                    span 职位:
+                    span #{position}
+                p(class='work-experience')
+                    span 工作经验:
+                    span #{workYears}
+        #main-content
+            #work-exp
+                h1(class='work-exp-title') 工作经历
+                div(class='first company-panel')
+                    img(class='company-logo' src='../public/images/neusoft-logo.gif')
+                    div
+                        h2(class='company-name') 东软集团（大连）有限公司
+                        ul
+                            li 1
+                            li 2
+                            li 3
+                div(class='second company-panel')
+                    img(class='company-logo')
+                    div
+                        h2(class='company-name') 江苏北斗卫星产业应用研究院
+                        ul
+                            li 1
+                            li 2
+                            li 3
+
+            #skill
+                h1(class='skill-title') 技能展示
+            #self-eval
+                h1(class='self-eval-title') 自我介绍
+
+    .hovermenu
+        -
+            var list = ["工作经历", "技能展示", "自我介绍"]
+        each item in list
+            a(class='hovermenu-item' href='#')= item
+
+    .quick-return
+        a(href='#')
+            img(src='../public/images/rocket.png')
+
+
+
