@@ -8,6 +8,15 @@ body{
 .header{
 background-color: #a86454;
 }
+.header .header-button{
+    display: none;
+    width: 3.4em;
+    height:3em;
+    background-color: white;
+    border-color: #a86454;
+    background-image: url("../images/menu-icon.png");
+    background-size:3em
+}
 .header .header-title{
     font-family: Arvo,Georgia,"Times New Roman",Times,serif;
     font-size: 2em;
@@ -22,15 +31,19 @@ background-color: #a86454;
     line-height: 3;
 
 }
+
 .header .menu li{
     margin: auto;
     margin-right: 1em;
 }
-.header .menu li a{
+a.header-link{
     text-decoration: none;
-    color: #FFFFFF;
     font-size:1.2em;
     font-family: "PT Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #e9cdad;
+}
+a.header-link:hover{
+    color: #FFFFFF;
 }
 .container{
     max-width: 1600px;
@@ -48,7 +61,8 @@ background-color: #a86454;
 #sidebar .about-title{
     text-align: center;
     display: block;
-    border-bottom: 2px solid #cc0000;
+    padding:.8em 0;
+    border-bottom: 2px double white;
 }
 #about{
     margin:1em .8em;
@@ -59,16 +73,20 @@ background-color: #a86454;
 }
 
 #about span:first-child{
-    width: 40%;
+    width: 24%;
     display: inline-block;
 }
 #main-content{
     margin-left:270px;
-    height: 3500px;
+
     background-color: #66bb00;
 }
 #main-content h1{
     font-size: 1.6em;
+}
+#main-content .content-page{
+    height:900px;
+    padding-top: 30%;
 }
 .my-photo{
     max-width: 40%;
@@ -82,6 +100,8 @@ background-color: #a86454;
 a.hovermenu-item{
     display: block;
     height: 24px;
+    text-decoration: none;
+    color:white;
     position: relative;
     background-color:#a86454;
     margin-bottom: 6px;
@@ -123,17 +143,57 @@ a.hovermenu-item::after{
     background-color: #FFFFFF;
     border:2px solid #a86454;
     border-radius: .2em;
+    color:#a86454;
 }
 .company-name{
-    color:#945C4C;
+
     font-weight: bolder;
 }
+#main-content .responsibility{
+    width: 100%;
+    list-style-type: circle;
+}
+#main-content .responsibility li{
+    text-align: left;
+}
+#skill .skills li{
+position: relative;
+    width: 14%;
+    height: 6em;
+    background-color: #00B7FF;
+    line-height: 6em;
+    border-radius: 1em;
+    display: inline-block;
+    margin-right: 10%;
+}
+#skill .skills li .skill-show{
+    width:300px;
+    height:240px;
+    display: none;
+    background-color:white;
+    border-radius: 1em;
+    margin-top: 12px;
+}
+#skill .skill-name{
+    cursor: pointer;
+}
 
+#skill .skills li .skill-show::before{
+    content:"";
+    position:absolute;
+    border: 12px solid;
+    border-color:transparent transparent #00B7FF transparent;
+    right:42%;
+    top:84px;
+}
 @media screen and (max-width: 1020px){
     #sidebar{
         display: none;
     }
     #main-content{
         margin-left: 0;
+    }
+    .hovermenu{
+        display: none;
     }
 }

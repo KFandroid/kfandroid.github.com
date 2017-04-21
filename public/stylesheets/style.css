@@ -22,7 +22,6 @@ button.ok{background-color: #6b0;}
 
 #test{
 
-  border:10px solid hsla(120,0%,100%,.5);
-  background:white;
-  background-clip:padding-box;
+  height:100%;
+  line-height: 100%;
 }
