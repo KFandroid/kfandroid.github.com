@@ -138,7 +138,7 @@ a.header-link:hover{
     max-width: 40%;
 }
 .hovermenu{
-    position: absolute;
+    position: fixed;
     top:600px;
     left:12%;
     width:66px;
@@ -238,7 +238,7 @@ a.hovermenu-item::after{
 }
 #skill .skill-container{
     width: 100%;
-    margin-top: 10%;
+    margin: 10%;
 }
 #skill .item-title{
     color: #1F8DD6;
@@ -246,10 +246,9 @@ a.hovermenu-item::after{
     font-size: 2em;
 }
 #skill .skill-item{
-    width: 45%;
+    width: 50%;
     height:8em;
     display: inline-block;
-    margin-left: 5%;
     float: left;
 }
 #skill .skill-item .item-img{
@@ -257,9 +256,13 @@ a.hovermenu-item::after{
     max-width: 6em;
 }
 #skill .skill-item .item-desc{
-    width: 60%;
+    width: 50%;
     display: inline-block;
-
+    padding-right: 6em;
+}
+#self-eval .contact{
+    font-size: 3em;
+    text-align: left;
 }
 @media screen and (max-width: 1020px){
 
@@ -281,4 +284,32 @@ a.hovermenu-item::after{
         display: inline-block;
         margin: 10px;
     }
+    #skill .skill-container{
+        width: 100%;
+        margin: 0;
+        margin-top: 10%;
+    }
+    #skill .item-title{
+        color: #1F8DD6;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    #skill .skill-item{
+        width: 45%;
+        height:8em;
+        display: inline-block;
+        margin-left: 5%;
+        float: left;
+    }
+    #skill .skill-item .item-img{
+        float: left;
+        max-width: 6em;
+    }
+    #skill .skill-item .item-desc{
+        width: 70%;
+        padding-right:0;
+        display: inline-block;
+
+    }
+
 }
