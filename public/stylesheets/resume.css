@@ -6,19 +6,20 @@ body{
     font-family: "Microsoft YaHei UI";
 }
 .header{
-background-color: #a86454;
+    background-color: #a86454;
 }
 .header .header-button{
     display: none;
     width: 3.4em;
     height:3em;
-    background-color: white;
+    background-color: #a86454;
     border-color: #a86454;
-    background-image: url("../images/menu-icon.png");
+    background-image: url("../images/menu-icon.png") ;
+    background-repeat: no-repeat;
     background-size:3em
 }
 .header .header-title{
-    font-family: Arvo,Georgia,"Times New Roman",Times,serif;
+
     font-size: 2em;
     height: 2em;
     line-height:2em;
@@ -31,7 +32,53 @@ background-color: #a86454;
     line-height: 3;
 
 }
-
+.header .float-menu{
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+    border-radius: .8em;
+    position: absolute;
+    width: 20em;
+    display: none;
+}
+.header .float-menu .float-item{
+    display: block;
+    text-align: center;
+    height: 3em;
+    line-height: 3em;
+}
+.header .float-menu .float-item a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.header .float-menu .float-item .last-a{
+    border-bottom-left-radius: .8em;
+    border-bottom-right-radius: .8em;
+}
+.header .float-menu .float-item a:hover{
+    background-color: #00B7FF;
+}
+.header .float-menu .float-item:first-child{
+    border-bottom: 1px solid black;
+    height: 5em;
+    line-height: 4em;
+}
+.header .float-menu .float-item .icon_photo{
+    max-width: 2em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.header .float-menu::before{
+    content:'';
+    position: absolute;
+    border:1em solid;
+    border-color: transparent transparent white transparent;
+    height: 0px;
+    width: 0px;
+    left:7%;
+    top:-2em;
+}
 .header .menu li{
     margin: auto;
     margin-right: 1em;
@@ -39,7 +86,7 @@ background-color: #a86454;
 a.header-link{
     text-decoration: none;
     font-size:1.2em;
-    font-family: "PT Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    
     color: #e9cdad;
 }
 a.header-link:hover{
@@ -78,7 +125,6 @@ a.header-link:hover{
 }
 #main-content{
     margin-left:270px;
-
     background-color: #66bb00;
 }
 #main-content h1{
@@ -156,37 +202,66 @@ a.hovermenu-item::after{
 #main-content .responsibility li{
     text-align: left;
 }
-#skill .skills li{
-position: relative;
-    width: 14%;
-    height: 6em;
-    background-color: #00B7FF;
-    line-height: 6em;
-    border-radius: 1em;
-    display: inline-block;
-    margin-right: 10%;
-}
-#skill .skills li .skill-show{
-    width:300px;
-    height:240px;
-    display: none;
-    background-color:white;
-    border-radius: 1em;
-    margin-top: 12px;
-}
-#skill .skill-name{
-    cursor: pointer;
-}
+/*#skill .skills>li{*/
+/*position: relative;*/
+    /*width: 14%;*/
+    /*height: 6em;*/
+    /*background-color: #00B7FF;*/
+    /*line-height: 6em;*/
+    /*border-radius: 1em;*/
+    /*display: inline-block;*/
+    /*margin-right: 10%;*/
+/*}*/
+/*#skill .skills li .skill-show{*/
+    /*width:300px;*/
+    /*height:240px;*/
+    /*display: none;*/
+    /*background-color:white;*/
+    /*border-radius: 1em;*/
+    /*margin-top: 12px;*/
+/*}*/
+/*#skill .skill-name{*/
+    /*cursor: pointer;*/
+/*}*/
 
-#skill .skills li .skill-show::before{
-    content:"";
-    position:absolute;
-    border: 12px solid;
-    border-color:transparent transparent #00B7FF transparent;
-    right:42%;
-    top:84px;
+/*#skill .skills li .skill-show::before{*/
+    /*content:"";*/
+    /*position:absolute;*/
+    /*border: 12px solid;*/
+    /*border-color:transparent transparent #00B7FF transparent;*/
+    /*right:42%;*/
+    /*top:84px;*/
+/*}*/
+#skill{
+    width: 100%;
+
+}
+#skill .skill-container{
+    width: 100%;
+    margin: 10%;
+}
+#skill .item-title{
+    color: #1F8DD6;
+    font-weight: bold;
+    font-size: 2em;
+}
+#skill .skill-item{
+    width: 50%;
+    height:8em;
+    display: inline-block;
+    float: left;
+}
+#skill .skill-item .item-img{
+    float: left;
+    max-width: 6em;
+}
+#skill .skill-item .item-desc{
+    width: 50%;
+    display: inline-block;
+    padding-right: 6em;
 }
 @media screen and (max-width: 1020px){
+
     #sidebar{
         display: none;
     }
@@ -195,5 +270,14 @@ position: relative;
     }
     .hovermenu{
         display: none;
+    }
+    .header{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .header .header-button{
+        display: inline-block;
+        margin: 10px;
     }
 }

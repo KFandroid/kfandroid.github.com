@@ -2,24 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>My Resume</title>
-    <link rel="stylesheet" href="../public/stylesheets/YUIReset.css"/>
-    <link rel="stylesheet" href="../public/stylesheets/resume.css"/>
+    <title>陆鸿博的简历</title>
+    <link rel="stylesheet" href="public/stylesheets/YUIReset.css"/>
+    <link rel="stylesheet" href="public/stylesheets/resume.css"/>
 </head>
 <body></body>
 <div class="header">
     <div class="container">
         <button class="header-button"></button>
-        <span class="header-title">RESUME</span>
+        <div class="float-menu">
+            <div class="float-item"><img class="icon_photo"
+                                         src="public/images/myPhoto.jpg"/><span>陆鸿博————web前端工程师</span></div>
+            <div class="float-item"><a href="#work-exp">工作经历</a></div>
+            <div class="float-item"><a href="#skill">技能展示</a></div>
+            <div class="float-item"><a href="#self-eval">自我介绍</a></div>
+            <div class="float-item"><a class="last-a" href="#page-info">关于本页</a></div>
+        </div>
+        <span class="header-title">简历</span>
         <ul class="menu">
-            <li><a class="header-link" href="mailto:luhongbo9786@gmail.com">Contact</a></li>
-            <li><a class="header-link" href="http://www.cnblogs.com/luhongbo/">Blog</a></li>
+            <li><a class="header-link" href="mailto:luhongbo9786@gmail.com">联系我</a></li>
+            <li><a class="header-link" href="http://www.cnblogs.com/luhongbo/">博客</a></li>
         </ul>
     </div>
 </div>
 <div class="container">
     <div id="sidebar"><h2 class="about-title">关于我</h2>
-        <div id="about"><img class="my-photo" src="../public/images/myPhoto.jpg"/>
+        <div id="about"><img class="my-photo" src="public/images/myPhoto.jpg"/>
             <p><span>姓名：</span><span> 陆鸿博</span></p>
             <p><span>职位：</span><span> 前端工程师</span></p>
             <p><span>经验：</span><span> 一年以上</span></p>
@@ -27,44 +35,31 @@
     </div>
     <div id="main-content">
         <div class="content-page" id="work-exp"><h1 class="work-exp-title">工作经历</h1>
-            <div class="first company-panel"><h2 class="company-name">东软集团（大连）有限公司</h2>
+            <div class="first company-panel"><h2 class="company-name">东软集团（大连）有限公司————前端助理工程师</h2>
                 <ul class="responsibility">
                     <li>使用webstorm+photoshop运用html+css等技术把UI设计图制作成网页并兼容ie9+、火狐、chrome等浏览器</li>
                     <li>与后端开发团队配合，确保代码有效对接，优化网站前端性能</li>
                     <li>实现各种页面交互效果</li>
                 </ul>
             </div>
-            <div class="second company-panel"><h2 class="company-name">江苏北斗卫星产业应用研究院</h2>
+            <div class="second company-panel"><h2 class="company-name">江苏北斗卫星产业应用研究院————前端工程师</h2>
                 <ul class="responsibility">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li>对北斗农机平台项目下的easyui框架进行样式改造</li>
+                    <li>解决PC端网页在分辨率下的自适应和浏览器兼容性问题</li>
+                    <li>制作投标项目的演示demo</li>
                 </ul>
             </div>
         </div>
         <div class="content-page" id="skill"><h1 class="skill-title">技能展示</h1>
-            <ul class="skills">
-                <li class="skill-name" id="first-skill">HTML+CSS
-                    <ul class="skill-show"></ul>
-                </li>
-                <li class="skill-name">JS
-                    <ul class="skill-show"></ul>
-                </li>
-                <li class="skill-name">Other
-                    <ul class="skill-show"></ul>
-                </li>
-            </ul>
-        </div>
-        <div class="content-page" id="self-eval"><h1 class="self-eval-title">自我介绍</h1></div>
-        <div class="content-page" id="page-info"><h1 class="self-eval-title">关于本页</h1>
-            <ul>
-                <li>本页是使用pug进行编写的，pug页面地址</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="hovermenu"><a class="hovermenu-item" href="#">工作经历</a><a class="hovermenu-item" href="#">技能展示</a><a
-        class="hovermenu-item" href="#">自我介绍</a><a class="hovermenu-item" href="#">关于本页</a></div>
-<div class="quick-return"><a href="#"><img src="../public/images/rocket.png"/></a></div>
-<script src="../public/javascripts/resume.js"></script>
-</html>
+            <div class="skill-container">
+                <div class="skill-item"><img class="item-img" src="public/images/icon-html.jpg"/>
+                    <h3 class="item-title">HTML5</h3><span class="item-desc">熟练手写符合w3c标准并具有语义化的HTML页面</span></div>
+                <div class="skill-item"><img class="item-img" src="public/images/icon-css.jpg"/>
+                    <h3 class="item-title">CSS3</h3><span
+                            class="item-desc">熟练使用CSS对网页布局进行调整，能利用媒体查询制作响应式布局，了解不同浏览器的兼容性。</span></div>
+                <div class="skill-item"><img class="item-img" src="public/images/icon-js.jpg"/>
+                    <h3 class="item-title">Javascript</h3><span class="item-desc">对javascript的原型、闭包、立即执行函数都有深刻理解，并用于javascript面向对象编程，熟练使用echarts、jquery等javascript库。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-pug.png"/><h3 class="item-title">pug</h3><span class="item-desc">熟练使用pug模版引擎编写页面，此页面就是用pug编写。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-bootstrap.jpg"/><h3 class="item-title">BootStrap</h3><span class="item-desc">能用bootstrap制作响应式页面，同时能在它基础上进行改造</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-jquery.jpg"/><h3 class="item-title">jQuery</h3><span class="item-desc">熟练使用，并在学习它的源码。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-ps.jpg"/><h3 class="item-title">Photoshop</h3><span class="item-desc">熟练使用PS对设计稿进行切图。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-git.jpg"/><h3 class="item-title">Git</h3><span class="item-desc">熟练运用git和svn进行团队协同工作</span></div></div></div><div class="content-page" id="self-eval"><h1 class="self-eval-title">自我介绍</h1><p>我叫陆鸿博，2016年毕业于山东科技大学计算机科学与技术。我是一个性格开朗、做事认真的人。在解决问题的同时，我喜欢深入研究工作中所碰到的问题。
+        我有时间概念，能在规定时间内保证完成任务。
+        一年前端开发经验，能熟练开发和设计响应式的页面，对JS的闭包、立即执行函数、原型都有深入学习。
+        我有良好的缩进和写注释的习惯。
+        工作中我善于与人沟通协作完成任务。</p></div><div class="content-page" id="page-info"><h1 class="self-eval-title">关于本页</h1><ul><li>当前为1.0版本，欢迎您常来看看</li><li>本页面是使用pug+css+Javascript进行预编写的，没有借助任何框架，pug页面地址：<a href="https://github.com/KFandroid/kfandroid.github.com/blob/master/views/index.pug">点击此处</a></li><li>适应多个终端，您可以在PC、mobile和pad上查看页面的不同效果</li><li>兼容ie9+（包含Edge）、火狐和Chrome浏览器</li></ul></div></div></div><div class="hovermenu"><a class="hovermenu-item" href="#work-exp">工作经历</a><a class="hovermenu-item" href="#skill">技能展示</a><a class="hovermenu-item" href="#self-eval">自我介绍</a><a class="hovermenu-item" href="#page-info">关于本页</a></div><div class="quick-return"><a href="#"><img src="public/images/rocket.png"/></a></div><script src="public/javascripts/resume.js"></script></html>
