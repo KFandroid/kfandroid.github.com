@@ -238,6 +238,7 @@ a.hovermenu-item::after{
 }
 #skill .skill-container{
     width: 100%;
+    margin-top: 10%;
 }
 #skill .item-title{
     color: #1F8DD6;
@@ -245,9 +246,10 @@ a.hovermenu-item::after{
     font-size: 2em;
 }
 #skill .skill-item{
-    width: 50%;
+    width: 45%;
     height:8em;
     display: inline-block;
+    margin-left: 5%;
     float: left;
 }
 #skill .skill-item .item-img{
@@ -255,9 +257,9 @@ a.hovermenu-item::after{
     max-width: 6em;
 }
 #skill .skill-item .item-desc{
-    width: 50%;
+    width: 60%;
     display: inline-block;
-    padding-right: 6em;
+
 }
 @media screen and (max-width: 1020px){
 
