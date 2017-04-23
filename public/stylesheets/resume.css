@@ -311,5 +311,8 @@ a.hovermenu-item::after{
         display: inline-block;
 
     }
-
+    #self-eval .contact{
+        font-size: 2em;
+        text-align: left;
+    }
 }
