@@ -1,77 +1,197 @@
-<!--Created by hasee on 2017/4/9.-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <title>陆鸿博的简历</title>
-    <link rel="stylesheet" href="public/stylesheets/YUIReset.css"/>
-    <link rel="stylesheet" href="public/stylesheets/resume.css"/>
+    <link rel="stylesheet" href="Css/YUIReset.css">
+    <link rel="stylesheet" href="Css/index.css">
 </head>
-<body></body>
-<div class="header">
-    <div class="container">
-        <button class="header-button"></button>
-        <div class="float-menu">
-            <div class="float-item">
-                <img class="icon_photo" src="public/images/myPhoto.jpg"/>
-                <span>陆鸿博————web前端工程师</span>
-            </div>
-            <div class="float-item"><a href="#work-exp">工作经历</a></div>
-            <div class="float-item"><a href="#skill">技能展示</a></div>
-            <div class="float-item"><a href="#self-eval">自我介绍</a></div>
-            <div class="float-item"><a class="last-a" href="#page-info">关于本页</a></div>
-        </div>
-        <span class="header-title">简历</span>
-        <ul class="menu">
-            <li><a class="header-link" href="mailto:luhongbo9786@gmail.com">联系我</a></li>
-            <li><a class="header-link" href="http://www.cnblogs.com/luhongbo/">博客</a></li>
+<body>
+<div class="container header">
+    <div class="logo">
+        <img src="Img/icon-butterfly.png" alt="butterfly">
+        <span class="main-title">简历</span>
+        <span class="subtitle">Talk is cheap,show you my code!</span>
+    </div>
+    <div class="navigator">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="http://www.cnblogs.com/luhongbo/">博客</a></li>
+            <li><a href="mailto:luhongbo9786@gmail.com">联系我</a></li>
         </ul>
     </div>
 </div>
-<div class="container">
-    <div id="sidebar"><h2 class="about-title">关于我</h2>
-        <div id="about"><img class="my-photo" src="public/images/myPhoto.jpg"/>
-            <p><span>姓名：</span><span> 陆鸿博</span></p>
-            <p><span>职位：</span><span> 前端工程师</span></p>
-            <p><span>经验：</span><span> 一年以上</span></p>
-            <p><span>学历：</span><span> 一本计算机科学与技术</span></p>
-            <p><span>电话：</span><span> 18651612809</span></p>
+<div class="tab-nav">
+    <ul>
+        <li>经历</li>
+        <li>技能</li>
+        <li>联系</li>
+    </ul>
+</div>
+<div class="container main-content">
+    <div class="content-left">
+        <ul class="num">
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="works table">
+
+            <div class="work-exp">
+                <h1>工作经验与项目经历</h1>
+                <span></span>
+                <div class="work">
+                    <span class="name">北斗卫星产业应用研究院</span>
+                    <span class="date">2017.1——2017.4</span>
+                </div>
+                <h2>主要职责</h2>
+                <ul class="resp">
+                    <li>对easyui框架进行改造</li>
+                    <li>解决PC端网页在不同分辨率下的自适应和浏览器兼容性问题</li>
+                    <li>制作投标项目的演示demo</li>
+
+                </ul>
+                <h2>参与项目</h2>
+
+                <div class="project">
+                    <h2>①北斗农机作业精细化管理平台</h2>
+                    <p>项目简介:对农机终端上传来的数据进行分析、显示和管理，对农机手的工作数据进行分析、显示和管理
+                    </p>
+                    <h2>主要职责</h2>
+                    <ul class="resp" >
+                        <li>项目的样式改造</li>
+                        <li>响应式页面的制作</li>
+                        <li>完成各种页面交互效果</li>
+                    </ul>
+                    <h2>②消防车辆智能管理平台</h2>
+                    <p>项目简介:查看消防车辆的位置信息，历史轨迹。对消防车辆进行指挥调度
+                    </p>
+                    <h2>主要职责</h2>
+                    <ul class="resp" >
+                        <li>制作投标demo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-exp">
+                <h1>工作经验与项目经历</h1>
+                <span></span>
+                <div class="work">
+                    <span class="name">东软集团（大连）有限公司</span>
+                    <span class="date">2016.7——2016.12</span>
+                </div>
+                <h2>主要职责</h2>
+                <ul class="resp">
+                    <li>将设计稿转为前台页面，并兼容主流浏览器</li>
+                    <li>解决PC端网页在不同分辨率下的自适应和浏览器兼容性问题</li>
+                    <li>运用Ajax对后端取出的数据进行处理并渲染至前台页面。</li>
+                    <li>通过js+css3编写交互效果和页面特效</li>
+                </ul>
+                <h2>参与项目</h2>
+
+                <div class="project">
+                    <h2>①普天新能源管理平台</h2>
+                    <p>项目简介:网厅部分前端用jquery、bootstrap、require.js、freemark后端用spring3+Struts2，<br>项目用maven搭建。
+                    </p>
+                    <h2>主要职责</h2>
+                    <ul class="resp" >
+                        <li>通过ajax请求获取数据，借助图吧api显示出一个地图，并将获取的<br>充电桩信息展示出来</li>
+                        <li>快速切出psd设计稿，兼容ie9和chrome</li>
+                        <li>完成各种页面交互效果</li>
+                    </ul>
+                    <h2>②河北电信石家庄爱营销</h2>
+                    <p>项目简介:河北电信石家庄爱营销网厅部分，用户登录网厅可以更改套餐和订购套餐，<br>查看自己的账户信息，兑换奖品等。
+                    </p>
+                    <h2>主要职责</h2>
+                    <ul class="resp" >
+                        <li>兼容火狐和ie9浏览器</li>
+                        <li>规范接口文档及接口的编写</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-exp">
+                <h1>工作经验与项目经历</h1>
+                <span></span>
+                <div class="work">
+                    <span class="name">北斗卫星产业应用研究院</span>
+                    <span class="date">2017.1——2017.4</span>
+                </div>
+                <h2>主要职责</h2>
+                <ul class="resp">
+                    <li>对easyui框架进行改造</li>
+                    <li>解决PC端网页在不同分辨率下的自适应和浏览器兼容性问题</li>
+                    <li>制作投标项目的演示demo</li>
+                    <li>通过js+css3编写交互效果和页面特效</li>
+                </ul>
+                <h2>参与项目</h2>
+
+                <div class="project">
+                    <h2>①北斗农机作业精细化管理平台</h2>
+                    <p>项目简介:对农机终端上传来的数据进行分析、显示和管理，对农机手的工作数据进行分析、显示和管理
+                    </p>
+                    <h2>主要职责</h2>
+                    <ul class="resp" >
+                        <li>项目的样式改造</li>
+                        <li>响应式页面的制作</li>
+                        <li>完成各种页面交互效果</li>
+                    </ul>
+                    <h2>②消防车辆智能管理平台</h2>
+                    <p>项目简介:查看消防车辆的位置信息，历史轨迹。对消防车辆进行指挥调度
+                    </p>
+                    <h2>主要职责</h2>
+                    <ul class="resp" >
+                        <li>制作投标demo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills table" >
+            <h1>技能展示</h1>
+            <h2>①HTML+CSS</h2>
+            <ul>
+                <li>熟练使用html+CSS进行网页布局并支持响应式，了解不同浏览器的兼容性。</li>
+                <li>熟练使用pug编写页面。</li>
+                <li>会使用Bootstrap、EasyUI等框架快速制作页面并根据需求进行改造。</li>
+            </ul>
+            <h2>②Javascript</h2>
+            <ul>
+                <li>熟练手写原生JS代码对JS的原型、闭包、立即执行函数都有深刻理解。</li>
+                <li>熟练使用echarts、jquery、highcharts等javascript库。</li>
+                <li>运用Ajax技术与后台交互，并将信息动态的渲染到页面中。</li>
+            </ul>
+            <h2>③Other</h2>
+            <ul>
+                <li>CET6级,无压力阅读英文文档</li>
+                <li>了解Webpack、ES6/7等前端技术</li>
+                <li>在工作中善于与各方面人员沟通</li>
+            </ul>
+        </div>
+        <div id="contact" class="table">
+            <h1>联系方式</h1>
+            <p>邮箱：<a href="mailto:luhongbo9786@gmail.com">296177811@qq.com</a></p>
+            <p>电话：18651612809</p>
         </div>
     </div>
-    <div id="main-content">
-        <div class="content-page" id="work-exp"><h1 class="work-exp-title">工作经历</h1>
-            <div class="first company-panel"><h2 class="company-name">东软集团（大连）有限公司————前端助理工程师</h2>
-                <ul class="responsibility">
-                    <li>使用webstorm+photoshop运用html+css等技术把UI设计图制作成网页并兼容ie9+、火狐、chrome等浏览器</li>
-                    <li>与后端开发团队配合，确保代码有效对接，优化网站前端性能</li>
-                    <li>实现各种页面交互效果</li>
-                </ul>
-            </div>
-            <div class="second company-panel"><h2 class="company-name">江苏北斗卫星产业应用研究院————前端工程师</h2>
-                <ul class="responsibility">
-                    <li>对北斗农机平台项目下的easyui框架进行样式改造</li>
-                    <li>解决PC端网页在分辨率下的自适应和浏览器兼容性问题</li>
-                    <li>制作投标项目的演示demo</li>
-                </ul>
-            </div>
-        </div>
-        <div class="content-page" id="skill"><h1 class="skill-title">技能展示</h1>
-            <div class="skill-container">
-                <div class="skill-item"><img class="item-img" src="public/images/icon-html.jpg"/>
-                    <h3 class="item-title">HTML5</h3><span class="item-desc">熟练手写符合w3c标准并具有语义化的HTML页面</span></div>
-                <div class="skill-item"><img class="item-img" src="public/images/icon-css.jpg"/>
-                    <h3 class="item-title">CSS3</h3><span
-                            class="item-desc">熟练使用CSS对网页布局进行调整，能利用媒体查询制作响应式布局，了解不同浏览器的兼容性。</span></div>
-                <div class="skill-item"><img class="item-img" src="public/images/icon-js.jpg"/>
-                    <h3 class="item-title">Javascript</h3>
-                    <span class="item-desc">对javascript的原型、闭包、立即执行函数都有深刻理解，并用于javascript面向对象编程，熟练使用echarts、jquery等javascript库。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-pug.png"/><h3 class="item-title">pug</h3><span class="item-desc">熟练使用pug模版引擎编写页面，此页面就是用pug编写。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-bootstrap.jpg"/><h3 class="item-title">BootStrap</h3><span class="item-desc">能用bootstrap制作响应式页面，同时能在它基础上进行改造</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-jquery.jpg"/><h3 class="item-title">jQuery</h3><span class="item-desc">熟练使用，并在学习它的源码。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-ps.jpg"/><h3 class="item-title">Photoshop</h3><span class="item-desc">熟练使用PS对设计稿进行切图。</span></div><div class="skill-item"><img class="item-img" src="public/images/icon-git.jpg"/><h3 class="item-title">Git</h3><span class="item-desc">熟练运用git和svn进行团队协同工作</span></div></div></div>
-        <div class="content-page" id="self-eval">
-            <h1 class="self-eval-title">自我介绍</h1>
-            <p>我叫陆鸿博，2016年毕业于山东科技大学计算机科学与技术,现居住在南京市浦口区。我是一个性格开朗、做事认真的人。在解决问题的同时，我喜欢深入研究工作中所碰到的问题。
-        我有时间概念，能在规定时间内保证完成任务。
-        一年前端开发经验，能熟练开发和设计响应式的页面，对JS的闭包、立即执行函数、原型都有深入学习。
-        我有良好的缩进和写注释的习惯。
-        工作中我善于与人沟通协作完成任务。</p>
-            <p class="contact"><span>电话：</span><span> 18651612809</span></p>
-            <p class="contact"><span>邮箱：</span><span> <a class="header-link" href="mailto:luhongbo9786@gmail.com">296177811@qq.com</a></span></p>
-        </div>
-        <div class="content-page" id="page-info"><h1 class="self-eval-title">关于本页</h1><ul><li>当前为1.0版本，欢迎您常来看看</li><li>本页面是使用pug+css+Javascript进行预编写的，没有借助任何框架，pug页面地址：<a href="https://github.com/KFandroid/kfandroid.github.com/blob/master/views/resume.pug">点击此处</a></li><li>适应多个终端，您可以在PC、mobile和pad上查看页面的不同效果</li><li>兼容ie9+（包含Edge）、火狐和Chrome浏览器</li></ul></div></div></div><div class="hovermenu"><a class="hovermenu-item" href="#work-exp">工作经历</a><a class="hovermenu-item" href="#skill">技能展示</a><a class="hovermenu-item" href="#self-eval">自我介绍</a><a class="hovermenu-item" href="#page-info">关于本页</a></div><div class="quick-return"><a href="#"><img src="public/images/rocket.png"/></a></div><script src="public/javascripts/resume.js"></script></html>
+    <div class="list-right">
+        <h1>关于我</h1>
+
+            <img class="photo-my" src="Img/resumePhoto.png">
+            <span class="name">陆鸿博</span>
+            <span class="job">web前端工程师</span>
+            <p>自我介绍：2016年毕业于山东科技大学<strong>计算机科学与技术系(一本),一年前端开发经验</strong>，现居住在<strong>南京市浦口区</strong>。我是一个性格开朗、做事认真的人。在解决问题的同时，我喜欢深入研究工作中所碰到的问题。
+                我有时间概念，能在规定时间内保证完成任务。
+                能熟练开发和设计响应式的页面，对<strong>JS的闭包、立即执行函数、原型</strong>都有深入学习。
+                我有<strong>良好的缩进和写注释的习惯</strong>。
+                工作中我善于与人沟通协作完成任务。</p>
+        <ul class="info-my"></ul>
+    </div>
+</div>
+<div class="outer-container">
+    <div class="container footer">
+    <div class="about"></div>
+    <div class="footer-nav"></div>
+    <div class="other"></div>
+    </div>
+</div>
+</body>
+<script src="Js/jquery-3.2.1.js"></script>
+<script src="Js/index.js"></script>
+</html>

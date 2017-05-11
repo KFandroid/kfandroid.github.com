@@ -69,7 +69,9 @@ input, textarea, select {
 legend {
     color: #000
 }
-
+a{
+    text-decoration: none;
+}
 #yui3-css-stamp.cssreset {
     display: none
 }
