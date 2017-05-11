@@ -259,4 +259,8 @@ div.tab-nav{
     body{
         width:1400px ;
     }
+
+    .main-content .content-left {
+        height: 1400px;
+    }
 }
